@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/fll"
+    tools:context="com.example.sara.loggit.LogIn">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="68dp"
+        android:padding="4dp"
+        />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/name_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/login_username_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="#fff"
+                android:textStyle="bold" />
+
+
+
+
+            <EditText
+                android:id="@+id/login_password_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_lock_white_24dp"
+                android:hint="Password"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="#fff"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Remember me "
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="445dp" />
+
+            <Button
+                android:id="@+id/login_login_Button"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_login"
+                android:text="Login"
+                android:textColor="#f16f7d"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/sign_up_btn"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:onClick="buttonClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_signup"
+                android:text="Sign Up"
+                android:textColor="#fff"
+                android:textStyle="bold" /> />
+            <TextView
+                android:id="@+id/login_msg_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="182dp"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

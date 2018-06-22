@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sara.loggit.SecondFragment">
+
+    <!--TextView and Button displayed in Second Fragment -->
+
+
+    <Button
+        android:id="@+id/secondButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/background_signup"
+        android:text=" CONFIRM "
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textColorHint="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

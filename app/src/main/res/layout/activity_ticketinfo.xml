@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".TicketInfoActivity">
+    <!-- display two Button's and a FrameLayout to replace the Fragment's  -->
+
+
+    <Button
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_signup"
+        android:text="    BOOK    "
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/secondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_signup"
+        android:text=" CANCEL BOOKING "
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
